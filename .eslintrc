@@ -1,4 +1,16 @@
 {
   "parser": "babel-eslint",
-  "rules": {}
+  "rules": {
+    "array-callback-return": "warn",
+    "eqeqeq": "error",
+    "require-unicode-regexp": "warn",
+    "no-alert": "warn",
+    "no-iterator": "error",
+    "no-eval": "error",
+    "no-extend-native": "error",
+    "no-multi-spaces": "error",
+    "no-proto": "error",
+    "no-return-await": "error",
+    "no-void": "error"
+  }
 }
