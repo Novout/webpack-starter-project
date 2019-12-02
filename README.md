@@ -25,6 +25,11 @@ Template for using webpack with plugins
     ├── yarn.lock                       # Yarn
 ```
 
+## Requirements
+
+- [NodeJS](https://nodejs.org)
+- [Yarn](https://yarnpkg.com/lang/en/)
+
 ## Commands
 
 `yarn start` Start a server by loading index.html
