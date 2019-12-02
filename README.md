@@ -8,7 +8,7 @@ Template for using webpack with plugins
     .
     ├── dist                            # Bundle files
     ├── public                          # Public files
-    |   └── html.index                  # HTML index
+    |   └── index.html                  # HTML index
     ├── src                             # Project source
     |   └── sass                        # Sass css files
     |   └── stylus                      # Stylus css files
