@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/main.ts",
   output: {
     filename: "[id].bundle.js",
-    path: Pt.resolve(__dirname, 'dist'),
+    path: Pt.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
@@ -65,9 +65,10 @@ module.exports = {
     new HtmlWebpackPlugin({ template: "./public/index.html", inject: "body" })
   ],
   resolve: {
-    extensions: [".js", "ts", ".styl", ".sass", "scss"],
+    extensions: [".js", ".ts", ".styl", ".sass", ".scss"],
     alias: {
       "~": Pt.resolve(__dirname, "../src")
-    }
+    },
+    modules: [Pt.resolve(__dirname, "src"), "node_modules"]
   }
 };

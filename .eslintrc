@@ -5,9 +5,9 @@
     "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": false,
+      "jsx": false
     },
-    "project": "./tsconfig.json",
+    "project": "./tsconfig.json"
   },
   "plugins": [
     "@typescript-eslint"
@@ -29,6 +29,6 @@
     "no-multi-spaces": "error",
     "no-proto": "error",
     "no-return-await": "error",
-    "no-void": "error",
+    "no-void": "error"
   }
 }
