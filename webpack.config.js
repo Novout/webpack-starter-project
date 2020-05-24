@@ -4,9 +4,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const Pt = require("path");
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: "./src/main.ts",
   output: {
-    filename: "[id].bundle.js"
+    filename: "[id].bundle.js",
+    path: Pt.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -51,18 +52,20 @@ module.exports = {
             name: "[path][name].[ext]"
           }
         }
-      }
+      },
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ template: "./public/index.html", inject: "body" }),
-    new Webpack.ProvidePlugin({
-      "window.jQuery": "jquery"
-    })
+    new HtmlWebpackPlugin({ template: "./public/index.html", inject: "body" })
   ],
   resolve: {
-    extensions: [".js", ".styl", ".sass", "scss"],
+    extensions: [".js", "ts", ".styl", ".sass", "scss"],
     alias: {
       "~": Pt.resolve(__dirname, "../src")
     }
