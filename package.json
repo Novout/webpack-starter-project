@@ -3,7 +3,8 @@
     "start": "webpack-dev-server --inline --watch --hot --content-base ./public",
     "dev": "webpack --mode development --module-bind js=babel-loader",
     "build": "webpack --mode production --module-bind js=babel-loader",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.0.0",
